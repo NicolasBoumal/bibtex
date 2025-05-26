@@ -1,3 +1,605 @@
+@misc{davis2024gradientdescentadaptivestepsize,
+      title={Gradient descent with adaptive stepsize converges (nearly) linearly under fourth-order growth}, 
+      author={Damek Davis and Dmitriy Drusvyatskiy and Liwei Jiang},
+      year={2024},
+      eprint={2409.19791},
+      archivePrefix={arXiv},
+      primaryClass={math.OC},
+      url={https://arxiv.org/abs/2409.19791}, 
+}
+
+@article{jikai_jin_2022,
+  author       = {Jikai Jin and
+                  Zhiyuan Li and
+                  Kaifeng Lyu and
+                  Simon S. Du and
+                  Jason D. Lee},
+  title        = {Understanding Incremental Learning of Gradient Descent: {A} Fine-grained
+                  Analysis of Matrix Sensing},
+  journal      = {CoRR},
+  volume       = {abs/2301.11500},
+  year         = {2023},
+  url          = {https://doi.org/10.48550/arXiv.2301.11500},
+  doi          = {10.48550/ARXIV.2301.11500},
+  eprinttype    = {arXiv},
+  eprint       = {2301.11500},
+  timestamp    = {Tue, 31 Jan 2023 16:32:09 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2301-11500.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@InProceedings{RIP_matrix_fact,
+  title = 	 {Algorithmic Regularization in Over-parameterized Matrix Sensing and Neural Networks with Quadratic Activations},
+  author =       {Li, Yuanzhi and Ma, Tengyu and Zhang, Hongyang},
+  booktitle = 	 {Proceedings of the 31st  Conference On Learning Theory},
+  pages = 	 {2--47},
+  year = 	 {2018},
+  editor = 	 {Bubeck, Sébastien and Perchet, Vianney and Rigollet, Philippe},
+  volume = 	 {75},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--09 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v75/li18a/li18a.pdf},
+  url = 	 {https://proceedings.mlr.press/v75/li18a.html},
+  abstract = 	 {We show that the gradient descent algorithm provides an implicit regularization effect in the learning of over-parameterized matrix factorization models and one-hidden-layer neural networks with quadratic activations. Concretely, we show that given $\tilde{O}(dr^{2})$ random linear measurements of a rank $r$ positive semidefinite matrix $X^{\star}$, we can recover $X^{\star}$ by parameterizing it by $UU^\top$ with $U\in \mathbb R^{d\times d}$ and minimizing the squared loss, even if $r \ll d$. We prove that starting from a small initialization, gradient descent recovers $X^{\star}$ in $\tilde{O}(\sqrt{r})$ iterations approximately. The results solve the conjecture of Gunasekar et al.’17 under the restricted isometry property.  The technique can be applied to analyzing neural networks with one-hidden-layer quadratic activations with some technical modifications.}
+}
+
+@inproceedings{limits_implicit_bias,
+title = "Implicit Bias of Gradient Descent on Reparametrized Models: On Equivalence to Mirror Descent",
+abstract = "As part of the effort to understand implicit bias of gradient descent in overparametrized models, several results have shown how the training trajectory on the overparametrized model can be understood as mirror descent on a different objective. The main result here is a characterization of this phenomenon under a notion termed commuting parametrization, which encompasses all the previous results in this setting. It is shown that gradient flow with any commuting parametrization is equivalent to continuous mirror descent with a related Legendre function. Conversely, continuous mirror descent with any Legendre function can be viewed as gradient flow with a related commuting parametrization. The latter result relies upon Nash's embedding theorem.",
+author = "Zhiyuan Li and Tianhao Wang and Lee, {Jason D.} and Sanjeev Arora",
+note = "Publisher Copyright: {\textcopyright} 2022 Neural information processing systems foundation. All rights reserved.; 36th Conference on Neural Information Processing Systems, NeurIPS 2022 ; Conference date: 28-11-2022 Through 09-12-2022",
+year = "2022",
+language = "English (US)",
+series = "Advances in Neural Information Processing Systems",
+publisher = "Neural information processing systems foundation",
+editor = "S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh",
+booktitle = "Advances in Neural Information Processing Systems 35 - 36th Conference on Neural Information Processing Systems, NeurIPS 2022",
+}
+
+@InProceedings{srebro_old,
+  title = 	 {Characterizing Implicit Bias in Terms of Optimization Geometry},
+  author =       {Gunasekar, Suriya and Lee, Jason and Soudry, Daniel and Srebro, Nathan},
+  booktitle = 	 {Proceedings of the 35th International Conference on Machine Learning},
+  pages = 	 {1832--1841},
+  year = 	 {2018},
+  editor = 	 {Dy, Jennifer and Krause, Andreas},
+  volume = 	 {80},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {10--15 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v80/gunasekar18a/gunasekar18a.pdf},
+  url = 	 {https://proceedings.mlr.press/v80/gunasekar18a.html},
+  abstract = 	 {We study the bias of generic optimization methods, including Mirror Descent, Natural Gradient Descent and Steepest Descent with respect to different potentials and norms, when optimizing underdetermined linear models or separable linear classification problems. We ask the question of whether the global minimum (among the many possible global minima) reached by optimization can be characterized in terms of the potential or norm, and indecently of hyper-parameter choices, such as stepsize and momentum.}
+}
+
+@inproceedings{srebro_old2,
+ author = {Gunasekar, Suriya and Woodworth, Blake E and Bhojanapalli, Srinadh and Neyshabur, Behnam and Srebro, Nati},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Implicit Regularization in Matrix Factorization},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2017/file/58191d2a914c6dae66371c9dcdc91b41-Paper.pdf},
+ volume = {30},
+ year = {2017}
+}
+
+@inproceedings{li_meta,
+  author       = {Zhiyuan Li and
+                  Yuping Luo and
+                  Kaifeng Lyu},
+  title        = {Towards Resolving the Implicit Bias of Gradient Descent for Matrix
+                  Factorization: Greedy Low-Rank Learning},
+  booktitle    = {9th International Conference on Learning Representations, {ICLR} 2021,
+                  Virtual Event, Austria, May 3-7, 2021},
+  publisher    = {OpenReview.net},
+  year         = {2021},
+  url          = {https://openreview.net/forum?id=AHOs7Sm5H7R},
+  timestamp    = {Sun, 06 Oct 2024 21:05:48 +0200},
+  biburl       = {https://dblp.org/rec/conf/iclr/LiLL21.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{li_meta_2,
+  author       = {Zhiyuan Li and
+                  Tianhao Wang and
+                  Sanjeev Arora},
+  title        = {What Happens after SGD Reaches Zero Loss? --A Mathematical Framework},
+  booktitle    = {10th International Conference on Learning Representations, {ICLR} 2022,
+                  Virtual Event, April 25-29, 2022},
+  publisher    = {OpenReview.net},
+  year         = {2022}
+}
+
+@inproceedings{leakevishnoibettersampling2021,
+author = {Leake, Jonathan and McSwiggen, Colin and Vishnoi, Nisheeth K.},
+title = {Sampling matrices from Harish-Chandra–Itzykson–Zuber densities with applications to Quantum inference and differential privacy},
+year = {2021},
+isbn = {9781450380539},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3406325.3451094},
+doi = {10.1145/3406325.3451094},
+abstract = {Given two Hermitian matrices Y and Λ, the Harish-Chandra–Itzykson–Zuber (HCIZ) distribution is given by the density eTr(U Λ U*Y) with respect to the Haar measure on the unitary group. Random unitary matrices distributed according to the HCIZ distribution are important in various settings in physics and random matrix theory, but the problem of sampling efficiently from this distribution has remained open. We present two algorithms to sample matrices from distributions that are close to the HCIZ distribution. The first produces samples that are ξ-close in total variation distance, and the number of arithmetic operations required depends on poly(log1/ξ). The second produces samples that are ξ-close in infinity divergence, but with a poly(1/ξ) dependence. Our results have the following applications: 1) an efficient algorithm to sample from complex versions of matrix Langevin distributions studied in statistics, 2) an efficient algorithm to sample from continuous maximum entropy distributions over unitary orbits, which in turn implies an efficient algorithm to sample a pure quantum state from the entropy-maximizing ensemble representing a given density matrix, and 3) an efficient algorithm for differentially private rank-k approximation that comes with improved utility bounds for k>1.},
+booktitle = {Proceedings of the 53rd Annual ACM SIGACT Symposium on Theory of Computing},
+pages = {1384–1397},
+numpages = {14},
+keywords = {unitary orbits, sampling from matrix manifolds, low-rank approximation, exponential density, differential privacy, density matrices},
+location = {Virtual, Italy},
+series = {STOC 2021}
+}
+
+@article{Chi_2019,
+   title={Nonconvex Optimization Meets Low-Rank Matrix Factorization: An Overview},
+   volume={67},
+   ISSN={1941-0476},
+   url={http://dx.doi.org/10.1109/TSP.2019.2937282},
+   DOI={10.1109/tsp.2019.2937282},
+   number={20},
+   journal={IEEE Transactions on Signal Processing},
+   publisher={Institute of Electrical and Electronics Engineers (IEEE)},
+   author={Chi, Yuejie and Lu, Yue M. and Chen, Yuxin},
+   year={2019},
+   month=oct, pages={5239–5269} }
+
+@misc{song2024localglobalminimizerssmooth,
+      title={On the local and global minimizers of the smooth stress function in Euclidean Distance Matrix problems}, 
+      author={Mengmeng Song and Douglas Goncalves and Woosuk L. Jung and Carlile Lavor and Antonio Mucherino and Henry Wolkowicz},
+      year={2024},
+      eprint={2408.07256},
+      archivePrefix={arXiv},
+      primaryClass={math.OC},
+      url={https://arxiv.org/abs/2408.07256}, 
+}
+
+@techreport{Malone2000,
+  author = {S. W. Malone and M. W. Trosset},
+  title = {A study of the stationary configurations of the s-stress criterion for metric multidimensional scaling},
+  institution = {Duke University},
+  year = {2000},
+  type = {Tech. Rep.}
+}
+
+@INPROCEEDINGS {10353110,
+author = { Hirai, Hiroshi and Nieuwboer, Harold and Walter, Michael },
+booktitle = { 2023 IEEE 64th Annual Symposium on Foundations of Computer Science (FOCS) },
+title = {{ Interior-point methods on manifolds: theory and applications }},
+year = {2023},
+volume = {},
+ISSN = {},
+pages = {2021-2030},
+abstract = { Interior-point methods offer a highly versatile framework for convex optimization that is effective in theory and practice. A key notion in their theory is that of a self-concordant barrier. We give a suitable generalization of self-concordance to Riemannian manifolds and show that it gives the same structural results and guarantees as in the Euclidean setting, in particular local quadratic convergence of Newton’s method. We analyze a path-following method for optimizing compatible objectives over a convex domain for which one has a self-concordant barrier, and obtain the standard complexity guarantees as in the Euclidean setting. We provide general constructions of barriers, and show that on the space of positive-definite matrices and other symmetric spaces, the squared distance to a point is self-concordant. To demonstrate the versatility of our framework, we give algorithms with state-of-the-art complexity guarantees for the general class of scaling and non-commutative optimization problems, which have been of much recent interest, and we provide the first algorithms for efficiently finding high-precision solutions for computing minimal enclosing balls and geometric medians in non-positive curvature. },
+keywords = {Manifolds;Computer science;Symmetric matrices;Convex functions;Complexity theory;Standards;Optimization},
+doi = {10.1109/FOCS57990.2023.00123},
+url = {https://doi.ieeecomputersociety.org/10.1109/FOCS57990.2023.00123},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month =Nov}
+
+@inproceedings{franksreichenback2021,
+	title={Barriers for Recent Methods in Geodesic Optimization},
+	author={Franks, C. and Reichenbach, P.},
+	booktitle={Proceedings of the 36th Computational Complexity Conference ({CCC} 2021)},
+	pages = 	 {13:1--13:54},
+	year={2021}
+}
+
+@inproceedings{sravishnoibracsampliebconstant,
+  author    = {S. Sra and
+               N. K. Vishnoi and
+               O. Yildiz},
+  editor    = {Eric Blais and
+               Klaus Jansen and
+               Jos{\'{e}} D. P. Rolim and
+               David Steurer},
+  title     = {On Geodesically Convex Formulations for the Brascamp-Lieb Constant},
+  booktitle = {Approximation, Randomization, and Combinatorial Optimization. Algorithms
+               and Techniques, {APPROX/RANDOM} 2018, August 20-22, 2018 - Princeton,
+               NJ, {USA}},
+  series    = {LIPIcs},
+  volume    = {116},
+  pages     = {25:1--25:15},
+  publisher = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+  year      = {2018},
+  url       = {https://doi.org/10.4230/LIPIcs.APPROX-RANDOM.2018.25},
+  doi       = {10.4230/LIPIcs.APPROX-RANDOM.2018.25},
+  timestamp = {Tue, 21 Sep 2021 09:36:24 +0200},
+  biburl    = {https://dblp.org/rec/conf/approx/SraVY18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{auderset2005angular,
+  added-at = {2011-01-29T23:38:49.000+0100},
+  author = {Auderset, C. and Mazza, C. and Ruh, E.A.},
+  biburl = {https://www.bibsonomy.org/bibtex/2fa0c171889c7ab4da74c516be1210c26/ytyoun},
+  interhash = {0cc49e27f31db9f840759c0ef2de70b6},
+  intrahash = {fa0c171889c7ab4da74c516be1210c26},
+  issn = {0047-259X},
+  journal = {Journal of Multivariate Analysis},
+  keywords = {angular-central-Gaussian},
+  number = 1,
+  pages = {180--197},
+  publisher = {Elsevier},
+  timestamp = {2011-01-29T23:38:49.000+0100},
+  title = {{Angular Gaussian and Cauchy estimation}},
+  volume = 93,
+  year = 2005
+}
+
+@INPROCEEDINGS{burgissernoncommutativeoptimization,
+  author={Bürgisser, P. and Franks, C. and Garg, A. and Oliveira, R. and Walter, M. and Wigderson, A.},
+  booktitle={2019 IEEE 60th Annual Symposium on Foundations of Computer Science (FOCS)}, 
+  title={Towards a Theory of Non-Commutative Optimization: Geodesic 1st and 2nd Order Methods for Moment Maps and Polytopes}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={845-861},
+  doi={10.1109/FOCS.2019.00055}}
+
+@article{burgisserdecidinghorn,
+author = {B\"{u}rgisser, Peter and Ikenmeyer, Christian},
+title = {Deciding Positivity of Littlewood--Richardson Coefficients},
+journal = {SIAM Journal on Discrete Mathematics},
+volume = {27},
+number = {4},
+pages = {1639-1681},
+year = {2013},
+doi = {10.1137/120892532},
+
+URL = { 
+    
+        https://doi.org/10.1137/120892532
+    
+    
+
+},
+eprint = { 
+    
+        https://doi.org/10.1137/120892532
+    
+    
+
+}
+,
+    abstract = { Starting with Knutson and Tao's hive model [J. Amer. Math. Soc., 12 (1999), pp. 1055--1090] we characterize the Littlewood--Richardson coefficient \${c\_{\lambda,\mu}^{\nu}}\$ of given partitions \$\lambda,\mu,\nu\in\mathbb{N}^n\$ as the number of capacity achieving hive flows on the honeycomb graph. Based on this, we design a polynomial time algorithm for deciding \${c\_{\lambda,\mu}^{\nu}} >0\$. This algorithm is easy to state and takes \$\mathcal{O}(n^3\log\nu\_1)\$ arithmetic operations and comparisons. We further show that the capacity achieving hive flows can be seen as the vertices of a connected graph, which leads to new structural insights into Littlewood--Richardson coefficients. }
+}
+
+@InProceedings{pmlr-v80-fazel18a,
+  title = 	 {Global Convergence of Policy Gradient Methods for the Linear Quadratic Regulator},
+  author =       {Fazel, Maryam and Ge, Rong and Kakade, Sham and Mesbahi, Mehran},
+  booktitle = 	 {Proceedings of the 35th International Conference on Machine Learning},
+  pages = 	 {1467--1476},
+  year = 	 {2018},
+  editor = 	 {Dy, Jennifer and Krause, Andreas},
+  volume = 	 {80},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {10--15 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v80/fazel18a/fazel18a.pdf},
+  url = 	 {https://proceedings.mlr.press/v80/fazel18a.html},
+  abstract = 	 {Direct policy gradient methods for reinforcement learning and continuous control problems are a popular approach for a variety of reasons: 1) they are easy to implement without explicit knowledge of the underlying model, 2) they are an “end-to-end” approach, directly optimizing the performance metric of interest, 3) they inherently allow for richly parameterized policies. A notable drawback is that even in the most basic continuous control problem (that of linear quadratic regulators), these methods must solve a non-convex optimization problem, where little is understood about their efficiency from both computational and statistical perspectives. In contrast, system identification and model based planning in optimal control theory have a much more solid theoretical footing, where much is known with regards to their computational and statistical properties. This work bridges this gap showing that (model free) policy gradient methods globally converge to the optimal solution and are efficient (polynomially so in relevant problem dependent quantities) with regards to their sample and computational complexities.}
+}
+
+
+@article{10.5555/3291125.3291154,
+author = {Hardt, Moritz and Ma, Tengyu and Recht, Benjamin},
+title = {Gradient descent learns linear dynamical systems},
+year = {2018},
+issue_date = {January 2018},
+publisher = {JMLR.org},
+volume = {19},
+number = {1},
+issn = {1532-4435},
+abstract = {We prove that stochastic gradient descent efficiently converges to the global optimizer of the maximum likelihood objective of an unknown linear time-invariant dynamical system from a sequence of noisy observations generated by the system. Even though the objective function is non-convex, we provide polynomial running time and sample complexity bounds under strong but natural assumptions. Linear systems identification has been studied for many decades, yet, to the best of our knowledge, these are the first polynomial guarantees for the problem we consider.},
+journal = {J. Mach. Learn. Res.},
+month = jan,
+pages = {1025–1068},
+numpages = {44},
+keywords = {time series, stochastic gradient descent, over-parameterization, non-convex optimization, linear dynamical system, generalization bounds}
+}
+
+@article{recht2019controlsurvey,
+   author = "Recht, Benjamin",
+   title = "A Tour of Reinforcement Learning: The View from Continuous Control", 
+   journal= "Annual Review of Control, Robotics, and Autonomous Systems",
+   year = "2019",
+   volume = "2",
+   number = "Volume 2, 2019",
+   pages = "253-279",
+   doi = "https://doi.org/10.1146/annurev-control-053018-023825",
+   url = "https://www.annualreviews.org/content/journals/10.1146/annurev-control-053018-023825",
+   publisher = "Annual Reviews",
+   issn = "2573-5144",
+   type = "Journal Article",
+   keywords = "optimization",
+   keywords = "machine learning",
+   keywords = "reinforcement learning",
+   keywords = "control theory",
+   abstract = "This article surveys reinforcement learning from the perspective of optimization and control, with a focus on continuous control applications. It reviews the general formulation, terminology, and typical experimental implementations of reinforcement learning as well as competing solution paradigms. In order to compare the relative merits of various techniques, it presents a case study of the linear quadratic regulator (LQR) with unknown dynamics, perhaps the simplest and best-studied problem in optimal control. It also describes how merging techniques from learning theory and control can provide nonasymptotic characterizations of LQR performance and shows that these characterizations tend to match experimental behavior. In turn, when revisiting more complex applications, many of the observed phenomena in LQR persist. In particular, theory and experiment demonstrate the role and importance of models and the cost of generality in reinforcement learning algorithms. The article concludes with a discussion of some of the challenges in designing learning systems that safely and reliably interact with complex and uncertain environments and how tools from reinforcement learning and control might be combined to approach these challenges.",
+  }
+
+@misc{zheng2024benignnonconvexlandscapesoptimal,
+      title={Benign Nonconvex Landscapes in Optimal and Robust Control, Part II: Extended Convex Lifting}, 
+      author={Yang Zheng and Chih-Fan Pai and Yujie Tang},
+      year={2024},
+      eprint={2406.04001},
+      archivePrefix={arXiv},
+      primaryClass={math.OC},
+      url={https://arxiv.org/abs/2406.04001}, 
+}
+
+@misc{zheng2023benignnonconvexlandscapesoptimal,
+      title={Benign Nonconvex Landscapes in Optimal and Robust Control, Part I: Global Optimality}, 
+      author={Yang Zheng and Chih-fan Pai and Yujie Tang},
+      year={2023},
+      eprint={2312.15332},
+      archivePrefix={arXiv},
+      primaryClass={math.OC},
+      url={https://arxiv.org/abs/2312.15332}, 
+}
+
+@inproceedings{NIPS2017_3f5ee243,
+ author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, \L ukasz and Polosukhin, Illia},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Attention is All you Need},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf},
+ volume = {30},
+ year = {2017}
+}
+
+@article{Dumbgen2022,
+  author = {Frederike Dümbgen and Connor Holmes and Timothy D. Barfoot},
+  title = {Safe and smooth: Certified continuous-time range-only localization},
+  journal = {IEEE Robotics and Automation Letters},
+  year = {2022},
+  volume = {8},
+  number = {2},
+  pages = {1117--1124},
+  publisher = {IEEE},
+  doi = {},
+  url = {https://ieeexplore.ieee.org/document/10003973},
+  abstract = {A common approach to localize a mobile robot is by measuring distances to points of known positions, called anchors. Locating a device from distance measurements is typically posed as a non-convex optimization problem, stemming from the nonlinearity of the measurement model. Non-convex optimization problems may yield suboptimal solutions when local iterative solvers such as Gauss-Newton are employed. In this letter, we design an optimality certificate for continuous-time range-only localization. Our formulation allows for the integration of a motion prior, which ensures smoothness of the solution and is crucial for localizing from only a few distance measurements. The proposed certificate comes at little additional cost since it has the same complexity as the sparse local solver itself: linear in the number of positions. We show, both in simulation and on real-world datasets, that the efficient local solver often …}
+}
+
+@misc{geshkovski2024dynamicmetastabilityselfattentionmodel,
+      title={Dynamic metastability in the self-attention model}, 
+      author={Borjan Geshkovski and Hugo Koubbi and Yury Polyanskiy and Philippe Rigollet},
+      year={2024},
+      eprint={2410.06833},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2410.06833}, 
+}
+
+@article{KNUTSON200061,
+title = {The symplectic and algebraic geometry of Horn's problem},
+journal = {Linear Algebra and its Applications},
+volume = {319},
+number = {1},
+pages = {61-81},
+year = {2000},
+issn = {0024-3795},
+doi = {https://doi.org/10.1016/S0024-3795(00)00220-2},
+url = {https://www.sciencedirect.com/science/article/pii/S0024379500002202},
+author = {Allen Knutson},
+abstract = {One version of Horn's problem asks for which λ,μ,ν does Hλ+Hμ+Hν=0 have solutions, where Hλ,μ,ν are Hermitian matrices with spectra λ,μ,ν. This turns out to be a moment map condition in Hamiltonian geometry. Many of the results around Horn's problem proven with great effort “by hand” are in fact simple consequences of the modern machinery of symplectic geometry, and the subtler ones provable via the connection to geometric invariant theory. We give an overview of this theory (which was not available to Horn), including all definitions, and how it can be used in linear algebra.}
+}
+
+@article{Horn1962,
+  author = {A. Horn},
+  title = {Eigenvalues of sums of Hermitian matrices},
+  journal = {Pacific Journal of Mathematics},
+  year = {1962},
+  volume = {12},
+  pages = {225--241},
+  issn = {0030-8730}
+}
+
+@article{Knutson2001,
+  author = {Allen Knutson and Terence Tao},
+  title = {Honeycombs and sums of Hermitian matrices},
+  journal = {Notices of the American Mathematical Society},
+  year = {2001},
+  volume = {48},
+  number = {2},
+  pages = {175--186},
+  abstract = {In 1912 Hermann Weyl [W] posed the following problem: given the eigenvalues of two \( n \times n \) Hermitian matrices \( A \) and \( B \), how does one determine all the possible sets of eigenvalues of the sum \( A+ B \)? When \( n= 1 \), the eigenvalue of \( A+ B \) is of course just the sum of the eigenvalue of \( A \) and the eigenvalue of \( B \), but the answer is more complicated in higher dimensions. Weyl’s partial answers to this problem have since had many direct applications to perturbation theory, quantum measurement theory, and the spectral theory of selfadjoint operators. The purpose of this article is to describe the complete resolution to this problem, based on recent breakthroughs [Kl],[HR],[KT],[KTW]. To standardize the notation, we shall always write the eigenvalues of an \( n \times n \) Hermitian matrix as a weakly decreasing \( n \)-tuple \( \lambda=(\lambda_1\geq... \geq \lambda_n) \) of real numbers. Thus, for instance, the eigenvalues of \( \operatorname{diag}(3, 2, 5, 3) \) are \( (5, 3, 3, 2) \).},
+  issn = {1088-9477},
+  url = {https://www.ams.org/notices/200102/200102-toc.html},
+  keywords = {Hermitian matrices, eigenvalues, Weyl problem, perturbation theory, quantum measurement theory}
+}
+
+@article{Walter2013,
+  author = {Michael Walter and Brent Doran and David Gross and Matthias Christandl},
+  title = {Entanglement Polytopes: Multiparticle Entanglement from Single-Particle Information},
+  journal = {Science},
+  year = {2013},
+  volume = {340},
+  number = {6137},
+  pages = {1205--1208},
+  doi = {10.1126/science.1232957},
+  url = {https://doi.org/10.1126/science.1232957},
+  eprint = {arXiv:1208.0365},
+  archivePrefix = {arXiv},
+  primaryClass = {quant-ph},
+  abstract = {Entangled many-body states are an essential resource for quantum computing and interferometry. Determining the type of entanglement present in a system usually requires access to an exponential number of parameters. We show that in the case of pure, multiparticle quantum states, features of the global entanglement can already be extracted from local information alone. This is achieved by associating any given class of entanglement with an entanglement polytope—a geometric object that characterizes the single-particle states compatible with that class. Our results, applicable to systems of arbitrary size and statistics, give rise to local witnesses for global pure-state entanglement and can be generalized to states affected by low levels of noise.},
+  keywords = {Physics, Applied-Physics, Chemistry; Quantum Physics; Mathematical Physics}
+}
+
+@article{Kirwan1984,
+  author = {Frances Kirwan},
+  title = {Convexity properties of the moment mapping, III},
+  journal = {Inventiones mathematicae},
+  year = {1984},
+  volume = {77},
+  number = {3},
+  pages = {547--552},
+  doi = {10.1007/BF01388838},
+  url = {https://doi.org/10.1007/BF01388838},
+  issn = {1432-1297}
+}
+
+@book{f5ed6840-1e83-3412-9379-8a84ba9e445d,
+ ISBN = {9780691083704},
+ URL = {http://www.jstor.org/stable/j.ctv10vm2m8},
+ abstract = { These notes describe a general procedure for calculating the Betti numbers of the projective quotient varieties that geometric invariant theory associates to reductive group actions on nonsingular complex projective varieties. These quotient varieties are interesting in particular because of their relevance to moduli problems in algebraic geometry. The author describes two different approaches to the problem. One is purely algebraic, while the other uses the methods of symplectic geometry and Morse theory, and involves extending classical Morse theory to certain degenerate functions.},
+ author = {Frances Clare Kirwan},
+ publisher = {Princeton University Press},
+ title = {Cohomology of Quotients in Symplectic and Algebraic Geometry. (MN-31), Volume 31},
+ urldate = {2024-10-25},
+ volume = {104},
+ year = {1984}
+}
+
+@misc{leake2021optimizationsamplingcontinuoussymmetry,
+      title={Optimization and Sampling Under Continuous Symmetry: Examples and Lie Theory}, 
+      author={Jonathan Leake and Nisheeth K. Vishnoi},
+      year={2021},
+      eprint={2109.01080},
+      archivePrefix={arXiv},
+      primaryClass={cs.DS},
+      url={https://arxiv.org/abs/2109.01080}, 
+}
+
+@inproceedings{NEURIPS2022_36e2967f,
+ author = {Bello, Kevin and Aragam, Bryon and Ravikumar, Pradeep},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {8226--8239},
+ publisher = {Curran Associates, Inc.},
+ title = {DAGMA: Learning DAGs via M-matrices and a Log-Determinant Acyclicity Characterization},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/36e2967f87c3362e37cf988781a887ad-Paper-Conference.pdf},
+ volume = {35},
+ year = {2022}
+}
+
+@InProceedings{DAGS_NO_CURL_pmlr-v139-yu21a,
+  title = 	 {DAGs with No Curl: An Efficient DAG Structure Learning Approach},
+  author =       {Yu, Yue and Gao, Tian and Yin, Naiyu and Ji, Qiang},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  pages = 	 {12156--12166},
+  year = 	 {2021},
+  editor = 	 {Meila, Marina and Zhang, Tong},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {18--24 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v139/yu21a/yu21a.pdf},
+  url = 	 {https://proceedings.mlr.press/v139/yu21a.html},
+  abstract = 	 {Recently directed acyclic graph (DAG) structure learning is formulated as a constrained continuous optimization problem with continuous acyclicity constraints and was solved iteratively through subproblem optimization. To further improve efficiency, we propose a novel learning framework to model and learn the weighted adjacency matrices in the DAG space directly. Specifically, we first show that the set of weighted adjacency matrices of DAGs are equivalent to the set of weighted gradients of graph potential functions, and one may perform structure learning by searching in this equivalent set of DAGs. To instantiate this idea, we propose a new algorithm, DAG-NoCurl, which solves the optimization problem efficiently with a two-step procedure: $1)$ first we find an initial non-acyclic solution to the optimization problem, and $2)$ then we employ the Hodge decomposition of graphs and learn an acyclic graph by projecting the non-acyclic graph to the gradient of a potential function. Experimental studies on benchmark datasets demonstrate that our method provides comparable accuracy but better efficiency than baseline DAG structure learning methods on both linear and generalized structural equation models, often by more than one order of magnitude.}
+}
+
+
+@inproceedings{DAGS_NO_TEARS_NEURIPS2018_e347c514,
+ author = {Zheng, Xun and Aragam, Bryon and Ravikumar, Pradeep K and Xing, Eric P},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {DAGs with NO TEARS: Continuous Optimization for Structure Learning},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2018/file/e347c51419ffb23ca3fd5050202f9c3d-Paper.pdf},
+ volume = {31},
+ year = {2018}
+}
+
+
+@InProceedings{franksmoitra2020,
+	title = 	 {Rigorous Guarantees for Tyler’s M-Estimator via Quantum Expansion},
+	author = 	 {Franks, C. and Moitra, A.},
+	booktitle = 	 {33rd Annual Conference on Learning Theory},
+	pages = 	 {1--32},
+	year = 	 {2020},
+	volume = 	 {125},
+	series = 	 {Proceedings of Machine Learning Research},
+	publisher = 	 {PMLR},
+	url = 	 {http://proceedings.mlr.press/v125/franks20a/franks20a.pdf}
+}
+
+@article{Hollender2024,
+  author = {Alexandros Hollender and Manolis Zampetakis},
+  title = {The computational complexity of finding stationary points in non-convex optimization},
+  journal = {Mathematical Programming},
+  year = {2024},
+  volume = {},
+  number = {},
+  pages = {},
+  doi = {10.1007/s10107-024-02139-3},
+  url = {https://doi.org/10.1007/s10107-024-02139-3},
+  abstract = {Finding approximate stationary points, i.e., points where the gradient is approximately zero, of non-convex but smooth objective functions f over unrestricted d-dimensional domains is one of the most fundamental problems in classical non-convex optimization. Nevertheless, the computational and query complexity of this problem are still not well understood when the dimension d of the problem is independent of the approximation error. In this paper, we show the following computational and query complexity results: 1.The problem of finding approximate stationary points over unrestricted domains is \textsf{PLS}-complete.2.For d = 2, we provide a zero-order algorithm for finding \varepsilon -approximate stationary points that requires at most O(1/\varepsilon )value queries to the objective function.3.We show that any algorithm needs at least \Omega (1/\varepsilon )queries to the objective function and/or its gradient to find \varepsilon -approximate stationary points when d=2. Combined with the above, this characterizes the query complexity of this problem to be \Theta (1/\varepsilon ).4.For d = 2, we provide a zero-order algorithm for finding \varepsilon -KKT points in constrained optimization problems that requires at most O(1/\sqrt{\varepsilon })value queries to the objective function. This closes the gap between works of Bubeck and Mikulincer and Vavasis and characterizes the query complexity of this problem to be \Theta (1/\sqrt{\varepsilon }).5.Combining our results with a recent result of Fearnley et al., we show that finding approximate KKT points in constrained optimization is reducible to finding approximate stationary points in unconstrained optimization but the converse is impossible.},
+  issn = {1436-4646}
+}
+
+
+@InProceedings{pmlr-v201-chewi23a,
+  title = 	 {On the complexity of finding stationary points of smooth functions in one dimension},
+  author =       {Chewi, Sinho and Bubeck, S\'ebastien and Salim, Adil},
+  booktitle = 	 {Proceedings of The 34th International Conference on Algorithmic Learning Theory},
+  pages = 	 {358--374},
+  year = 	 {2023},
+  editor = 	 {Agrawal, Shipra and Orabona, Francesco},
+  volume = 	 {201},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {20 Feb--23 Feb},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v201/chewi23a/chewi23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v201/chewi23a.html},
+  abstract = 	 {We characterize the query complexity of finding stationary points of one-dimensional non-convex but smooth functions. We consider four settings, based on whether the algorithms under consideration are deterministic or randomized, and whether the oracle outputs $1^{\rm st}$-order or both $0^{\rm th}$- and $1^{\rm st}$-order information. Our results show that algorithms for this task provably benefit by incorporating either randomness or $0^{\rm th}$-order information. Our results also show that, for every dimension $d \geq 1$, gradient descent is optimal among deterministic algorithms using $1^{\rm st}$-order queries only.}
+}
+
+
+@article{nesterovagd1983,
+  author = {Nesterov, Y. E.},
+  journal = {Soviet Mathematics Doklady},
+  number = 27,
+  pages = {372--376},
+  title = {A method of solving a convex programming with convergence rate $O(1/k^2)$},
+  volume = 2,
+  year = 1983
+}
+
+@InProceedings{opencriscitiello23b,
+  title = 	 {Open Problem: Polynomial linearly-convergent method for g-convex optimization?},
+  author =       {Criscitiello, Christopher and Mart{\'i}nez-Rubio, David and Boumal, Nicolas},
+  booktitle = 	 {Proceedings of Thirty Sixth Conference on Learning Theory},
+  pages = 	 {5950--5956},
+  year = 	 {2023},
+  editor = 	 {Neu, Gergely and Rosasco, Lorenzo},
+  volume = 	 {195},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {12--15 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v195/criscitiello23b/criscitiello23b.pdf},
+  url = 	 {https://proceedings.mlr.press/v195/criscitiello23b.html},
+  abstract = 	 {Let $f \colon \mathcal{M} \to \mathbb{R}$ be a Lipschitz and geodesically convex function defined on a $d$-dimensional Riemannian manifold $\mathcal{M}$. Does there exist a first-order deterministic algorithm which (a) uses at most $O(\mathrm{poly}(d) \log(\epsilon^{-1}))$ subgradient queries to find a point with target accuracy $\epsilon$, and (b) requires only $O(\mathrm{poly}(d))$ arithmetic operations per query? In convex optimization, the classical ellipsoid method achieves this. After detailing related work, we provide an ellipsoid-like algorithm with query complexity $O(d^2 \log^2(\epsilon^{-1}))$ and per-query complexity $O(d^2)$ for the limited case where $\mathcal{M}$ has constant curvature (hemisphere or hyperbolic space). We then detail possible approaches and corresponding obstacles for designing an ellipsoid-like method for general Riemannian manifolds.}
+}
+
+
+@article{Kha79,
+  title={A polynomial algorithm in linear programming},
+  author={Khachiyan, L. G.},
+  journal={Dokl. Akad. Nauk SSSR},
+  volume={244},
+  number={5},
+  pages={1093--1096},
+  year={1979},
+  url={https://www.mathnet.ru/dan42319}
+}
+
+@article{wiesel2015gconvexity,
+  author={Wiesel, A. and Zhang, T.},
+  title={Structured Robust Covariance Estimation},
+  year={2014},
+  volume={8},
+  number={3},
+  pages={127--216},
+  doi={10.1561/2000000053},
+  journal={Foundations and Trends in Signal Processing}
+}
+
 @techreport{malone2000sstress,
   author       = {Malone, Samuel W. and Trosset, Michael W.},
   title        = {A Study of the Stationary Configurations of the SStress Criterion for Metric Multidimensional Scaling},
