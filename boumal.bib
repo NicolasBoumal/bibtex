@@ -1,3 +1,20 @@
+@article{rosenrangeaidedslam2024,
+author = {Papalia, Alan and Fishberg, Andrew and O'Neill, Brendan W. and How, Jonathan P. and Rosen, David M. and Leonard, John J.},
+title = {Certifiably Correct Range-Aided SLAM},
+year = {2024},
+issue_date = {2024},
+publisher = {IEEE Press},
+volume = {40},
+issn = {1552-3098},
+url = {https://doi.org/10.1109/TRO.2024.3454430},
+doi = {10.1109/TRO.2024.3454430},
+abstract = {We present the first algorithm to efficiently compute certifiably optimal solutions to range-aided simultaneous localization and mapping (RA-SLAM) problems. Robotic navigation systems increasingly incorporate point-to-point ranging sensors, leading to state estimation problems in the form of RA-SLAM. However, the RA-SLAM problem is significantly more difficult to solve than traditional pose-graph SLAM: Ranging sensor models introduce nonconvexity and single range measurements do not uniquely determine the transform between the involved sensors. As a result, RA-SLAM inference is sensitive to initial estimates yet lacks reliable initialization techniques. Our approach, certifiably correct RA-SLAM (CORA), leverages a novel quadratically constrained quadratic programming formulation of RA-SLAM to relax the RA-SLAM problem to a semidefinite program (SDP). CORA solves the SDP efficiently using the Riemannian Staircase methodology; the SDP solution provides both: 1) a lower bound on the RA-SLAM problem's optimal value and 2) an approximate solution of the RA-SLAM problem, which can be subsequently refined using local optimization. CORA applies to problems with arbitrary pose-pose, pose-landmark, and ranging measurements and, due to using convex relaxation, is insensitive to initialization. We evaluate CORA on several real-world problems. In contrast to state-of-the-art approaches, CORA is able to obtain high-quality solutions on all problems despite being initialized with random values. In addition, we study the tightness of the SDP relaxation with respect to important problem parameters: The number of: 1) robots; 2) landmarks; and 3) range measurements. These experiments demonstrate that the SDP relaxation is often tight and reveal relationships between graph connectivity and the tightness of the SDP relaxation.},
+journal = {Trans. Rob.},
+month = jan,
+pages = {4265–4283},
+numpages = {19}
+}
+
 @inproceedings{chijinsaddles2017,
 author = {Jin, Chi and Ge, Rong and Netrapalli, Praneeth and Kakade, Sham M. and Jordan, Michael I.},
 title = {How to escape saddle points efficiently},
